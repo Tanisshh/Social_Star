@@ -5,7 +5,7 @@ from django.urls import reverse
 from group.models import Group, GroupMember
 
 
-class CreatePost(LoginRequiredMixin, generic.CreateView):
+class CreateGroup(LoginRequiredMixin, generic.CreateView):
     fields = ('name', 'description')
     model = Group
 
